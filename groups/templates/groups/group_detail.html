@@ -6,7 +6,7 @@
     {% if user in group.members.all %}
     <a href="{url 'groups:leave' slug=groups.slug}">Leave</a>
     {% else %}
-    <a href="{url 'groups:leave' slug=groups.slug}">join</a>
+    <a href="{url 'groups:join' slug=groups.slug}">join</a>
 
     {% endif%}
 </div>
